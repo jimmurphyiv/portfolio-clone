@@ -30,7 +30,7 @@ body {
   font-weight: bolder;
 }
 
-.desktop {
+.desktop-menu {
   display: flex;
   width: 400px;
   color: white;
@@ -40,13 +40,13 @@ body {
   align-items: flex-end;
 }
 
-/* .mobile {
+.mobile-menu {
   display: none;
 }
 
 .dropdown{
   display: none;
-}  */
+} 
 
 h1 {
   color: white;
@@ -81,26 +81,34 @@ button {
   margin: 40px;
 }
 
-/* @media screen and (max-width: 990px){
+ @media screen and (max-width: 990px){
 .App-header{
   background-color: white;
   }
 }
-.desktop {
+
+@media screen and (max-width: 990px){
+.desktop-menu {
   display: none;
+  }
 }
 
+@media screen and (max-width: 990px){
 .Logo {
   color: Black;
+  }
 }
 
+@media screen and (max-width: 990px){
 .dropdown {
   display: initial;
   color: white;
   font-size: 25px;
+  }
 }
 
-.mobile {
+@media screen and (max-width: 990px){
+.mobile-menu {
   display: initial;
   color: black;
   height: 200px;
@@ -111,6 +119,5 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-} */
-
+  } 
+}

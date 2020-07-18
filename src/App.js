@@ -20,8 +20,8 @@ class App extends Component {
         <div>
           <header className="App-header">
             <div className='Logo'>Bootstrap</div>
-
-              <nav className='desktop'>
+              
+              <nav className='desktop-menu'>
                 <span>About</span>
                 <span>Projects</span>
                 <span>Contact</span>
@@ -30,7 +30,7 @@ class App extends Component {
               <div className='dropdown' onClick={this.toggleDropdown}>MENU</div>
               { this.state.dropdownVeiw
                 ? (
-                  <nav className='mobile'>
+                  <nav className='mobile-menu'>
                   <span>About</span>
                   <span>Projects</span>
                   <span>Contact</span>

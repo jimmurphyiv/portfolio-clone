@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   toggleDropdown = () => {
-    this.setState({dropdownVeiw: !this.state.dropdownview})
+    this.setState({dropdownVeiw: !this.state.dropdownView})
   }
 
   render(){
@@ -19,22 +19,22 @@ class App extends Component {
         
         <div>
           <header className="App-header">
-            <div className='Logo'>
-              Bootstrap
-            </div>
-              <div className='Nav'>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-              </div>
+            <div className='Logo'>Bootstrap</div>
+
+              <nav className='desktop'>
+                <span>About</span>
+                <span>Projects</span>
+                <span>Contact</span>
+              </nav>
+
               <div className='dropdown' onClick={this.toggleDropdown}>MENU</div>
               { this.state.dropdownVeiw
                 ? (
-                  <div className='mobile-menu'>
-                  <li>About</li>
-                  <li>Projects</li>
-                  <li>Contact</li>
-                </div>
+                  <nav className='mobile'>
+                  <span>About</span>
+                  <span>Projects</span>
+                  <span>Contact</span>
+                </nav>
                   
                  ) :  null}
           </header>

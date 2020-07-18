@@ -102,22 +102,26 @@ button {
 @media screen and (max-width: 990px){
 .dropdown {
   display: initial;
-  color: white;
+  color: black;
   font-size: 25px;
+  
   }
 }
 
 @media screen and (max-width: 990px){
 .mobile-menu {
   display: initial;
+  background-color: white;
   color: black;
-  height: 200px;
+  height: 100px;
   width: 100%;
   position: fixed;
-  top: 10vh;
+  top: 10%;
   left: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 50px;
   } 
 }

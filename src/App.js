@@ -27,7 +27,7 @@ class App extends Component {
                 <span>Contact</span>
               </nav>
 
-              <div className='dropdown' onClick={this.toggleDropdown}>MENU</div>
+              <div className='dropdown' onClick={this.toggleDropdown}><button>MENU</button></div>
               { this.state.dropdownVeiw
                 ? (
                   <nav className='mobile-menu'>

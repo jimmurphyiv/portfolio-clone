@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  font-family:  'M PLUS Rounded 1c', sans-serif;;
+  background-color: black;
+  height: 100vh;
+  opacity: .4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.App-header{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 30px;
+  opacity: .8;
+}
+
+.Logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.Nav {
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  color: white;
+  box-sizing: content-box;
+  filter: brightness(400%);
+  justify-content: space-around;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+dropdown{
+  display: none;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 100px;
+  letter-spacing: 20px;
+  margin-bottom: 0%;
+  
+}
+
+p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0%;
+}
+
+button {
+  background-color: rgb(2, 175, 138);
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 40px;
+}
+
+@media screen and (max-width: 990px){
+  .App-header{
+    background-color: white;
   }
 }
+.Nav {
+  display: none;
+}
+.Logo {
+  color: Black;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+dropdown {
+  list-style-type: none;
+  display: initial;
+  color: white;
+  font-size: 25px;
+}
+
+.mobile-menu{
+  display: initial;
+  color: black;
+  height: 200px;
+  width: 100%;
+  position: fixed;
+  top: 10vh;
+  left: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
